@@ -1,0 +1,22 @@
+---
+---
+
+$base-font-family: 'Khand', sans-serif;
+$base-font-size:   18px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$text-color:        rgb(184, 184, 184);
+$background-color:  rgb(46, 46, 46);
+$brand-color:       rgb(255, 132, 208);
+
+$grey-color:        rgb(194, 194, 194);
+$grey-color-dark:   rgb(255, 0, 140);
+$grey-color-light:  lighten($grey-color-dark, 10%);
+
+$content-width:     1200px;
+
+@import url('https://fonts.googleapis.com/css?family=Khand');
+
+@import "minima";
