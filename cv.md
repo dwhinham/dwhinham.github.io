@@ -13,4 +13,4 @@ On this page you can download the latest version of my Curriculum Vitae (CV) and
 
 [cv_pdf]: /assets/docs/dale_whinham_cv_2017.pdf
 [cv_screenshot]: /assets/images/cv.png "Download my CV"
-{: style="float:right;box-shadow:5px 5px 15px #ff008c;" }
+{: width="180px" style="float:right;box-shadow:5px 5px 15px #ff008c;" }

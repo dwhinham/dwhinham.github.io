@@ -1,22 +1,63 @@
 ---
 ---
 
-$base-font-family: 'Khand', sans-serif;
+$base-font-family: 'Lato', sans-serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$text-color:        rgb(184, 184, 184);
-$background-color:  rgb(46, 46, 46);
-$brand-color:       rgb(255, 132, 208);
+$text-color:        #b8b8b8;
+$background-color:  #1d1d1d;
+$brand-color:       #ff84d0;
 
-$grey-color:        rgb(194, 194, 194);
-$grey-color-dark:   rgb(255, 0, 140);
+$grey-color:        #c2c2c2;
+$grey-color-dark:   #ff008c;
 $grey-color-light:  lighten($grey-color-dark, 10%);
+
+$teapot-color:   #9e0157;
 
 $content-width:     1200px;
 
 @import url('https://fonts.googleapis.com/css?family=Khand');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 @import "minima";
+
+main {
+    background-image: url("/assets/images/teapot.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: 190%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Khand';
+}
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
