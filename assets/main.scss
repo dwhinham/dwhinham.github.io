@@ -15,7 +15,9 @@ $grey-color:        #c2c2c2;
 $grey-color-dark:   #ff008c;
 $grey-color-light:  lighten($grey-color-dark, 10%);
 
-$teapot-color:   #9e0157;
+$header-color:      lighten($text-color, 20%);
+$teapot-color:      #9e0157;
+$shadow-color:		#121212;
 
 $content-width:     1200px;
 
@@ -32,7 +34,25 @@ main {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Khand';
+	font-family: 'Khand';
+	color: $header-color;
+}
+
+h1, h2, h3 {
+	border-bottom: thin solid $grey-color-light;
+	clear: both;
+}
+
+h2, h3 {
+	margin-top: 30px;
+}
+
+.float-image {
+	float: right;
+	max-width: 33%;
+	margin: 0px 0px 20px 20px;
+	box-shadow: 5px 5px 15px $shadow-color;
+	clear: both;
 }
 
 .image-source-link {
@@ -60,4 +80,15 @@ h1, h2, h3, h4 {
 .mfp-with-zoom.mfp-removing .mfp-container, 
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
+}
+
+.twentytwenty-container {
+	float: right;
+	width: 50%;
+	margin: 20px 0px 0px 20px;
+	box-shadow: 5px 5px 15px $shadow-color;
+}
+
+.post p {
+	text-align: justify;
 }
