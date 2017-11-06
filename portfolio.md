@@ -36,12 +36,12 @@ The game features:
 
 ### Screen-Space Ambient Occlusion (2017)
 
+For my final year BSc dissertation project, I chose to implement an advanced graphics rendering technique called _Screen-Space Ambient Occlusion_, or SSAO. This technique allows one to add realtime soft shadows to a 3D scene as a fast post-processing stage within a deferred rendering pipeline.
+
 <div id="ssao" class="twentytwenty-container">
 ![ssao1]
 ![ssao2]
 </div>
-
-For my final year BSc dissertation project, I chose to implement an advanced graphics rendering technique called _Screen-Space Ambient Occlusion_, or SSAO. This technique allows one to add realtime soft shadows to a 3D scene as a fast post-processing stage within a deferred rendering pipeline.
 
 The aim of the project was to evaluate the performance of the algorithm, both in terms of efficiency and visual appearance. The [Crytek Sponza](http://g3d.cs.williams.edu/g3d/data10/index.html) was chosen as a test scene, and a cross-platform engine was developed as a test bench for the algorithm. [SDL][sdl] was used to ease porting between Windows and Android.
 
