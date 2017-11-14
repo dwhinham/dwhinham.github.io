@@ -2,6 +2,7 @@
 layout: page
 title: Portfolio
 permalink: /portfolio/
+nav_order: 2
 ---
 
 {::options parse_block_html="true" /}
@@ -11,6 +12,11 @@ Here is a selection of my previous work and contributions related to graphics, p
 ## Student projects
 
 ### Stunt Track Racer (2017)
+
+<div>
+<iframe src="https://www.youtube.com/embed/AejAfFN0S30" frameborder="0" allowfullscreen></iframe>
+</div>
+{: .float-video }
 
 <div class="gallery">
 [![str1_thumb]][str1]
@@ -36,12 +42,17 @@ The game features:
 
 ### Screen-Space Ambient Occlusion (2017)
 
-For my final year BSc dissertation project, I chose to implement an advanced graphics rendering technique called _Screen-Space Ambient Occlusion_, or SSAO. This technique allows one to add realtime soft shadows to a 3D scene as a fast post-processing stage within a deferred rendering pipeline.
-
-<div id="ssao" class="twentytwenty-container">
-![ssao1]
-![ssao2]
+<div>
+<iframe src="https://www.youtube.com/embed/4wx3VB-fdTE" frameborder="0" allowfullscreen></iframe>
 </div>
+{: .float-video }
+<div class="gallery">
+[![ssao2_thumb]][ssao2]
+[![ssao3_thumb]][ssao3]
+[![ssao4_thumb]][ssao4]
+</div>
+
+For my final year BSc dissertation project, I chose to implement an advanced graphics rendering technique called _Screen-Space Ambient Occlusion_, or SSAO. This technique allows one to add realtime soft shadows to a 3D scene as a fast post-processing stage within a deferred rendering pipeline.
 
 The aim of the project was to evaluate the performance of the algorithm, both in terms of efficiency and visual appearance. The [Crytek Sponza](http://g3d.cs.williams.edu/g3d/data10/index.html) was chosen as a test scene, and a cross-platform engine was developed as a test bench for the algorithm. [SDL][sdl] was used to ease porting between Windows and Android.
 
@@ -53,6 +64,11 @@ The software project features:
   * Ability to examine the "G-buffer" to visualise the different stages of the pipeline.
 
 This project was very interesting as it gave me experience of leveraging framebuffer objects and "render-to-texture" to implement post-processing effects. It was also nice to see that SSAO is feasible on mobile GPUs in 2017; 10 years ago SSAO was just becoming a possibiliy on desktop PC GPUs.
+
+<div id="ssao" class="twentytwenty-container">
+![ssao1_thumb]
+![ssao2_thumb]
+</div>
 
 #### Resources
 
@@ -115,49 +131,44 @@ $(document).ready(function() {
 	});
 });
 
-$(function() {
+$(window).on('load', function() {
 	$('#ssao').twentytwenty({
-		default_offset_pct: 0.5, // How much of the before image is visible when the page loads
-		before_label: 'No SSAO', // Set a custom before label
-		after_label: 'SSAO enabled, 8 samples', // Set a custom after label
-
-		click_to_move: true // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
-
+		default_offset_pct: 0.5,
+		before_label: 'No SSAO',
+		after_label: 'SSAO enabled, 8 samples',
+		click_to_move: true 
 	});
 });
 </script>
 
-
 [str1]: /assets/screenshots/str1.png "Stunt Track Racer - 'A Dead Easy Little Exercise'"
 [str2]: /assets/screenshots/str2.png "Stunt Track Racer - 'The Hump Back'"
-
-[ssao1]: /assets/screenshots/ssao1.png "SSAO Demo - SSAO on"
-[ssao2]: /assets/screenshots/ssao2.png "SSAO Demo - SSAO off"
-[ssao3]: /assets/screenshots/ssao3.png "SSAO Demo - SSAO only"
-[ssao4]: /assets/screenshots/ssao4.png "SSAO Demo - G-buffer"
 
 [str1_thumb]: /assets/screenshots/thumbs/str1.png "Stunt Track Racer - 'A Dead Easy Little Exercise'"
 {: .float-image }
 [str2_thumb]: /assets/screenshots/thumbs/str2.png "Stunt Track Racer - 'The Hump Back'"
 {: .float-image }
 
+[ssao1]: /assets/screenshots/ssao1.png "SSAO Demo - SSAO off"
+[ssao2]: /assets/screenshots/ssao2.png "SSAO Demo - SSAO on"
+[ssao3]: /assets/screenshots/ssao3.png "SSAO Demo - SSAO only"
+[ssao4]: /assets/screenshots/ssao4.png "SSAO Demo - G-buffer"
+
+[ssao1_thumb]: /assets/screenshots/thumbs/ssao1.png "SSAO Demo - SSAO off"
+{: .float-image }
+[ssao2_thumb]: /assets/screenshots/thumbs/ssao2.png "SSAO Demo - SSAO on"
+{: .float-image }
+[ssao3_thumb]: /assets/screenshots/thumbs/ssao3.png "SSAO Demo - SSAO only"
+{: .float-image }
+[ssao4_thumb]: /assets/screenshots/thumbs/ssao4.png "SSAO Demo - G-buffer"
+{: .float-image }
+
 [dissertation_pdf]: /assets/docs/dale_whinham_screen_space_secondary_lighting.pdf
-
-[ssao1_thumb]: /assets/screenshots/thumbs/ssao1.png
-[ssao2_thumb]: /assets/screenshots/thumbs/ssao2.png
-[ssao3_thumb]: /assets/screenshots/thumbs/ssao3.png
-[ssao4_thumb]: /assets/screenshots/thumbs/ssao4.png
-
-[ssao1]: /assets/screenshots/ssao1.png
-[ssao2]: /assets/screenshots/ssao2.png
-[ssao3]: /assets/screenshots/ssao3.png
-[ssao4]: /assets/screenshots/ssao4.png
 
 [mt]: /assets/screenshots/milkytracker.png "MilkyTracker"
 
 [mt_thumb]: /assets/screenshots/milkytracker.png "MilkyTracker"
 {: .float-image }
-
 
 [sdl]: https://www.libsdl.org
 [bullet]: http://bulletphysics.org

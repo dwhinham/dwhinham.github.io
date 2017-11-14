@@ -8,7 +8,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $text-color:        #b8b8b8;
-$background-color:  #1d1d1d;
+$background-color:  #1b1b1b;
 $brand-color:       #ff84d0;
 
 $grey-color:        #c2c2c2;
@@ -16,10 +16,12 @@ $grey-color-dark:   #ff008c;
 $grey-color-light:  lighten($grey-color-dark, 10%);
 
 $header-color:      lighten($text-color, 20%);
-$teapot-color:      #9e0157;
+$teapot-color:      #5c163c;
 $shadow-color:		#121212;
 
 $content-width:     1200px;
+
+$max-float-width: 	33%;
 
 @import url('https://fonts.googleapis.com/css?family=Khand');
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -29,8 +31,10 @@ $content-width:     1200px;
 main {
     background-image: url("/assets/images/teapot.svg");
     background-repeat: no-repeat;
-    background-size: 80%;
-    background-position-x: 190%;
+    background-size: 120%;
+	background-position-x: 20%;
+	background-position-y: 20%;
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4 {
@@ -48,11 +52,30 @@ h2, h3 {
 }
 
 .float-image {
-	float: right;
-	max-width: 33%;
-	margin: 0px 0px 20px 20px;
 	box-shadow: 5px 5px 15px $shadow-color;
 	clear: both;
+	float: right;
+	margin: 0px 0px 20px 20px;
+	max-width: $max-float-width;
+}
+
+.float-video {
+	box-shadow: 5px 5px 15px $shadow-color;
+	clear: both;
+	float: right;
+	height: 0px;
+	margin: 0px 0px 20px 20px;
+	padding-bottom: 315 / 560 * $max-float-width;
+	position: relative;
+	width: $max-float-width;
+}
+
+.float-video > iframe { 
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
 }
 
 .image-source-link {
@@ -83,18 +106,34 @@ h2, h3 {
 }
 
 .twentytwenty-container {
-	float: right;
-	width: 50%;
-	margin-left: 20px;
+	max-width: 100%;
+	margin: 20px auto 20px auto;
 	box-shadow: 5px 5px 15px $shadow-color;
+}
+
+.twentytwenty-container img {
+	width: 100%;
+	margin: 0;
 }
 
 @include media-query($on-palm) {
 	.twentytwenty-container {
-		float: none;
-		width: 100%;
-		margin: 0px 0px 20px 0px;
+		max-width: 100%;
+		margin: 20px 0px 20px 0px;
 		box-shadow: 5px 5px 15px $shadow-color;
+	}
+
+	.float-image {
+		max-width: 100%;
+		margin: 20px 0px 20px 0px;
+		float: none;
+	}
+	
+	.float-video {
+		width: 100%;
+		margin: 20px 0px 20px 0px;
+		float: none;
+		padding-bottom: 315 / 560 * 100%;
 	}
 }
 

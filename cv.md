@@ -3,6 +3,7 @@ layout: page
 title: Curriculum Vitae
 short_title: CV
 permalink: /cv/
+nav_order: 3
 ---
 
 
