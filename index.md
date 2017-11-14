@@ -25,4 +25,4 @@ I am a highly motivated and passionate programmer who loves a challenge, and I'm
   * Enjoying and restoring vintage computers (e.g. Commodore Amiga)
 
 [me]: /assets/photos/me.jpg "Dale"
-{: width="25%" .float-image style="border-radius:50%;" }
+{: .float-image-non-responsive style="width:25%;border-radius:50%;" }
