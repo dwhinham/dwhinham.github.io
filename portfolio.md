@@ -11,6 +11,52 @@ Here is a selection of my previous work and contributions related to graphics, p
 
 ## Student projects
 
+### Virtual Reality City Simulation (2018) - currently in progress
+
+[![vrcity1_thumb]][vrcity1]{: .image-popup-no-margins }
+
+For my MSc dissertation project, I am currently using the [Unity game engine][unity] to build an explorable city environment which can be experienced in VR using Oculus Rift or HTC Vive. The goal of the project is to explore the feasibility of utilising these technologies as part of psychiatric therapy.
+
+The user will be able to explore the environment by walking or using simulated public transport, and will encounter various scenarios which they will be able to respond to in a number of ways.
+
+More details will be available when the project is completed.
+
+### OpenGL Graphics Demo (2017)
+
+<div>
+<iframe src="https://www.youtube.com/embed/HmmcYdPmeSk" frameborder="0" allowfullscreen></iframe>
+</div>
+{: .float-video }
+
+<div class="gallery">
+[![advg1_thumb]][advg1]
+[![advg2_thumb]][advg2]
+[![advg3_thumb]][advg3]
+</div>
+
+This graphics demo was written using a custom engine in C++, and demonstrates a number of interesting rendering techniques across three example scenes. It was developed as a coursework submission for the [Advanced Graphics for Games] module of my MSc in Games Engineering.
+
+Effects/technologies implemented:
+
+   * Screen-space Ambient Occlusion (with Gaussian Blur)
+   * Deferred rendering pipeline with G-buffer
+   * Normal ("bump") mapping
+   * Runtime heightmap generation from image file (Scene 1)
+   * Multitexturing with texture selection map (oasis grass in Scene 1)
+   * Distance-based fog (Scenes 1 and 2)
+   * Phong shading
+   * Omni-directional shadow mapping using cubemaps
+   * Multiple lights (moon and firefly in Scene 2)
+   * Dynamic environment map to reflect surrounding objects (Scene 3)
+   * Tessellation with heightmap (walls in Scene 3)
+   * Scene graph with transparency sorting and frustum culling
+   * GUI (using [Dear ImGUI][imgui]) for showing debug info about frustum culling, camera, FPS, and for controlling effects
+   * Cross-platform support by using [SDL][sdl] and OpenGL
+
+#### Resources
+
+  * [Windows version](/assets/files/advg-win.zip)
+
 ### Stunt Track Racer (2017)
 
 <div>
@@ -23,17 +69,17 @@ Here is a selection of my previous work and contributions related to graphics, p
 [![str2_thumb]][str2]
 </div>
 
-Developed as part of the [Computer Games Development] module of my BSc. degree, this game was designed as a nod to the 1989 classic, [Stunt Car Racer](http://gamesnostalgia.com/en/game/stunt-track-racer) on the Amiga.
+Developed as part of the [Computer Games Development] module of my BSc degree, this game was designed as a nod to the 1989 classic, [Stunt Car Racer](http://gamesnostalgia.com/en/game/stunt-track-racer) on the Amiga.
 
 The objective is simple - complete the circuit by reaching all the checkpoints before the time runs out. If you fall off the track, you can reset to the previous checkpoint, __BUT__ it will cost you 10 seconds!
  
 The game features:
-  * A custom game engine written from scratch in C++.
-  * Cross-platform support by using [SDL][sdl] and OpenGL.
-  * Sophisticated vehicle physics using [Bullet][bullet].
-  * Custom "zone"-based memory allocation and management (à la the Doom and Quake engines).
-  * Data-driven track, car, and asset loading by means of parsing [YAML](http://yaml.org/) (.yml) files.
-  * Semi-automated track geometry generation by using control points loaded from data files to create [Catmull-Rom splines](https://en.wikipedia.org/wiki/Centripetal_Catmull%E2%80%93Rom_spline).
+  * A custom game engine written from scratch in C++
+  * Cross-platform support by using [SDL][sdl] and OpenGL
+  * Sophisticated vehicle physics using [Bullet][bullet]
+  * Custom "zone"-based memory allocation and management (à la the Doom and Quake engines)
+  * Data-driven track, car, and asset loading by means of parsing [YAML](http://yaml.org/) (.yml) files
+  * Semi-automated track geometry generation by using control points loaded from data files to create [Catmull-Rom splines](https://en.wikipedia.org/wiki/Centripetal_Catmull%E2%80%93Rom_spline)
 
 #### Resources
 
@@ -57,11 +103,11 @@ For my final year BSc dissertation project, I chose to implement an advanced gra
 The aim of the project was to evaluate the performance of the algorithm, both in terms of efficiency and visual appearance. The [Crytek Sponza](http://g3d.cs.williams.edu/g3d/data10/index.html) was chosen as a test scene, and a cross-platform engine was developed as a test bench for the algorithm. [SDL][sdl] was used to ease porting between Windows and Android.
 
 The software project features:
-  * A 4-stage deferred rendering pipeline for OpenGL 3.x and OpenGL ES 3.x.
-  * Frames-per-second counter.
-  * Configurable number of SSAO samples.
-  * Ability to enable/disable blurring stage.
-  * Ability to examine the "G-buffer" to visualise the different stages of the pipeline.
+  * A 4-stage deferred rendering pipeline for OpenGL 3.x and OpenGL ES 3.x
+  * Frames-per-second counter
+  * Configurable number of SSAO samples
+  * Ability to enable/disable blurring stage
+  * Ability to examine the "G-buffer" to visualise the different stages of the pipeline
 
 This project was very interesting as it gave me experience of leveraging framebuffer objects and "render-to-texture" to implement post-processing effects. It was also nice to see that SSAO is feasible on mobile GPUs in 2017; 10 years ago SSAO was just becoming a possibiliy on desktop PC GPUs.
 
@@ -141,6 +187,22 @@ $(window).on('load', function() {
 });
 </script>
 
+[vrcity1]: /assets/screenshots/vrcity1.png "VR City Simulation - Bus Stop"
+
+[vrcity1_thumb]: /assets/screenshots/thumbs/vrcity1.png "VR City Simulation - Bus Stop"
+{: .float-image }
+
+[advg1]: /assets/screenshots/advg1.png "Advanced Graphics Demo - 'Oasis' Scene"
+[advg2]: /assets/screenshots/advg2.png "Advanced Graphics Demo - 'Stonehenge' Scene"
+[advg3]: /assets/screenshots/advg3.png "Advanced Graphics Demo - 'Teapot' Scene"
+
+[advg1_thumb]: /assets/screenshots/thumbs/advg1.png "Advanced Graphics Demo - 'Oasis' Scene"
+{: .float-image }
+[advg2_thumb]: /assets/screenshots/thumbs/advg2.png "Advanced Graphics Demo - 'Stonehenge' Scene"
+{: .float-image }
+[advg3_thumb]: /assets/screenshots/thumbs/advg3.png "Advanced Graphics Demo - 'Teapot' Scene"
+{: .float-image }
+
 [str1]: /assets/screenshots/str1.png "Stunt Track Racer - 'A Dead Easy Little Exercise'"
 [str2]: /assets/screenshots/str2.png "Stunt Track Racer - 'The Hump Back'"
 
@@ -170,10 +232,13 @@ $(window).on('load', function() {
 [mt_thumb]: /assets/screenshots/milkytracker.png "MilkyTracker"
 {: .float-image }
 
+[unity]: https://unity3d.com
 [sdl]: https://www.libsdl.org
 [bullet]: http://bulletphysics.org
+[imgui]: https://github.com/ocornut/imgui
 
 [Computer Games Development]: https://www.ncl.ac.uk/module-catalogue/module.php?code=CSC3224
+[Advanced Graphics for Games]: https://www.ncl.ac.uk/module-catalogue/module.php?code=CSC8502
 
 [.XM (eXtended Module)]: https://en.wikipedia.org/wiki/XM_(file_format)
 [demoscene]: https://en.wikipedia.org/wiki/Demoscene
