@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: dope.fish
+title: Dale Whinham
 author: Dale Whinham
 email: daleyo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Home page and portfolio of Dale Whinham, MSc Games Engineering
+  Home page and portfolio of Dale Whinham, Game Technology PhD
   student at Newcastle University.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

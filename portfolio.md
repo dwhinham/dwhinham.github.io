@@ -11,15 +11,17 @@ Here is a selection of my previous work and contributions related to graphics, p
 
 ## Student projects
 
-### Virtual Reality City Simulation (2018) - currently in progress
+### Virtual Reality City Simulation (2018)
 
+<div>
+<iframe src="https://www.youtube.com/embed/-Ff4RggZ8cg" frameborder="0" allowfullscreen></iframe>
+</div>
+{: .float-video }
 [![vrcity1_thumb]][vrcity1]{: .image-popup-no-margins }
 
-For my MSc dissertation project, I am currently using the [Unity game engine][unity] to build an explorable city environment which can be experienced in VR using Oculus Rift or HTC Vive. The goal of the project is to explore the feasibility of utilising these technologies as part of psychiatric therapy.
+For my MSc dissertation project, I used the [Unity game engine][unity] to build an explorable city environment which can be experienced in VR using Oculus Rift or HTC Vive. The goal of the project was to explore the feasibility of utilising these technologies as part of psychiatric therapy.
 
-The user will be able to explore the environment by walking or using simulated public transport, and will encounter various scenarios which they will be able to respond to in a number of ways.
-
-More details will be available when the project is completed.
+The user is able to explore the environment by walking or using simulated public transport, and in further work, will encounter various scenarios which they will be able to respond to in a number of ways.
 
 ### OpenGL Graphics Demo (2017)
 
