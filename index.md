@@ -21,7 +21,6 @@ My area of research focusses on distributed real-time physics simulations using 
   * Contributing to [open-source projects](http://github.com/milkytracker/milkytracker/)
   * The [Demoscene](https://en.wikipedia.org/wiki/Demoscene)
   * Enjoying and restoring vintage computers (e.g. Commodore Amiga)
-  * DJing and working on [PT-1210](http://pt1210.abime.net/), the digital Amiga Protracker turntable
 
 [me]: /assets/photos/me.jpg "Dale"
 {: .float-image-non-responsive style="width:25%;border-radius:50%;" }
