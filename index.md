@@ -8,7 +8,7 @@ nav_order: 1
 
 Hello! I am a software engineer from Newcastle-upon-Tyne, UK.
 
-I hold a [Masters' degree in Computer Science (Games Engineering)](http://www.ncl.ac.uk/postgraduate/courses/degrees/computer-game-engineering-msc/) from [Newcastle University](https://www.ncl.ac.uk/).
+I hold a [Masters' degree in Computer Science (Games Engineering)](https://www.ncl.ac.uk/postgraduate/degrees/5152f/) from [Newcastle University](https://www.ncl.ac.uk/).
 
 I especially love electronics, music, embedded systems and programming; sometimes all mixed together.
 I'm most well-known for [mt32-pi](https://github.com/dwhinham/mt32-pi), a bare-metal MIDI synthesizer for Raspberry Pi.
