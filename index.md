@@ -6,15 +6,17 @@ nav_order: 1
 
 ![me]
 
-I am an [MSc Games Engineering](http://www.ncl.ac.uk/postgraduate/courses/degrees/computer-game-engineering-msc/) graduate from Newcastle-upon-Tyne, UK.
+Hello! I am a software engineer from Newcastle-upon-Tyne, UK.
 
-I'm currently studying for a PhD in Computer Science/Game Technology with [Dr. Graham Morgan](https://grahamiskind.github.io/home/) and the [EPSRC Centre for Doctoral Training in Cloud Computing for Big Data](http://www.bigdata-cdt.ac.uk/) at [Newcastle University](http://www.ncl.ac.uk/).
+I hold a [Masters' degree in Computer Science (Games Engineering)](http://www.ncl.ac.uk/postgraduate/courses/degrees/computer-game-engineering-msc/) from [Newcastle University](https://www.ncl.ac.uk/).
 
-My area of research focusses on distributed real-time physics simulations using cloud computing.
+I especially love electronics, music, embedded systems and programming; sometimes all mixed together.
+I'm most well-known for [mt32-pi](https://github.com/dwhinham/mt32-pi), a bare-metal MIDI synthesizer for Raspberry Pi.
 
 ## Some of my interests include:
   * Low-level programming languages (C/C++, Rust)
-  * Graphics programming (experienced in OpenGL)
+  * Embedded systems programming (bare-metal Raspberry Pi, Arduino etc.)
+  * Audio and graphics-related programming
   * Cross-platform development (including Windows, macOS, Linux and other unusual platforms)
   * 'Homebrew' software for games consoles (e.g. Nintendo 3DS, PlayStation Vita, and Nintendo Switch)
   * DIY/hobbyist electronics projects (e.g. [OSSC](http://junkerhq.net/xrgb/index.php?title=OSSC))
